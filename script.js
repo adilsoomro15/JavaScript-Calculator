@@ -22,7 +22,13 @@ function equalButPress() {
 }
 
 function clearButPress() {
-
+    preVal = ''
+    newVal = ''
+    resultVal = ''
+    mathOperator = ''
+    decimalClicked = false
+    valMemStored = ''
+    document.getElementById('entry').val = '0'
 }
 
 function copyButPress() {
