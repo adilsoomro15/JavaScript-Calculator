@@ -27,13 +27,16 @@ function clearButPress() {
     resultVal = ''
     mathOperator = ''
     decimalClicked = false
-    document.getElementById('entry').val = '0'
+    document.getElementById('entry').value = '0'
 }
-
+// Store current value #entry in valMemStored
 function copyButPress() {
-
+    valMemStored = document.getElementById('entry').value
 }
-
+// If a value has been stored, paste it in the #entry window and assign it as the newVal
 function pasteButPress() {
-
+    if (valMemStored) {
+        document.getElementById('entry').value = valMemStored
+        newVal = valMemStored
+    }
 }
